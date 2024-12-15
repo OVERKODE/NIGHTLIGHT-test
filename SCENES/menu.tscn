@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgri5dwsrouq4"]
+
+[ext_resource type="Script" path="res://SCRIPTS/play.gd" id="1_wgi0h"]
+
+[node name="MENU" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+self_modulate = Color(0, 0, 0, 1)
+offset_right = 1153.0
+offset_bottom = 649.0
+
+[node name="name" type="Label" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 142.0
+offset_right = 247.0
+offset_bottom = 179.0
+scale = Vector2(1.5, 1.5)
+text = "NIGHTLIGHT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="play" type="Button" parent="CanvasLayer/Panel"]
+modulate = Color(0, 1, 1, 1)
+layout_mode = 0
+offset_left = 789.0
+offset_top = 292.0
+offset_right = 989.0
+offset_bottom = 492.0
+text = "PLAY"
+script = ExtResource("1_wgi0h")
+
+[connection signal="pressed" from="CanvasLayer/Panel/play" to="CanvasLayer/Panel/play" method="_on_pressed"]
