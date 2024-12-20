@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://dg6bxge0itxpp"]
+
+[node name="cut_scene" type="Node3D"]

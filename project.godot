@@ -14,3 +14,7 @@ config/name="nightlight"
 run/main_scene="res://SCENES/menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[dotnet]
+
+project/assembly_name="nightlight"
